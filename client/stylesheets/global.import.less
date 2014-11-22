@@ -1,0 +1,117 @@
+@light-grey: #FCFBFB;
+@grey: #6F6F6F;
+@not-really-white: #FCFCFC;
+@blue-mimi: #8BC3E2;
+@blue-mad-mimi: #0286CE;
+
+html, body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background: url('/images/michelle.jpg') no-repeat center center fixed;
+  background-color: @not-really-white;
+  background-size: cover;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: lighter;
+  src: url('fonts/Lato-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Varela';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/VarelaRound-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Caprica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/CapricaScript.ttf') format('truetype');
+}
+
+
+header#landing {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  background: @light-grey;
+  -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  box-shadow:         inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+
+  h1 {
+    font-family: 'Caprica';
+    font-size: 48px;
+    color: @blue-mimi;
+}
+
+  ul li {
+      display: inline;
+      padding: 0 10px;
+
+      a {
+        text-decoration: none;
+        font-family: 'Lato';
+        font-weight: lighter;
+        font-size: 24px;
+        color: @blue-mimi;
+      }
+    
+     a:hover {
+        color: @blue-mad-mimi;
+     }
+  }
+
+}
+
+section#cta {
+  .display(flex);
+  .justify-content(center);
+  .align-items(center);
+  height: 50rem;
+
+  h2 {
+
+    font-family: 'Varela';
+    font-size: 36px;
+    color: @grey; 
+    text-align: center;
+    line-height: 2em;
+
+    span {
+      font-family: 'Caprica';
+    }
+
+    p {
+      font-family: 'Lato';
+      font-weight: lighter;
+      font-size: 20px;
+    }
+  }
+
+}
