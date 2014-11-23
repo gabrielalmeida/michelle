@@ -7,6 +7,9 @@ meteor-platform
 autopublish
 insecure
 less
-iron:router
 mquandalle:jade
-
+jquery
+michelle:jquery-waypoints
+michelle:velocity
+michelle:onepage-scroll
+iron:router

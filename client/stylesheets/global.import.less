@@ -1,6 +1,8 @@
 @light-grey: #FCFBFB;
 @grey: #6F6F6F;
+
 @not-really-white: #FCFCFC;
+
 @blue-mimi: #8BC3E2;
 @blue-mad-mimi: #0286CE;
 
@@ -10,9 +12,10 @@ html, body {
 }
 
 body {
-  background: url('/images/michelle.jpg') no-repeat center center fixed;
+  background: url('/images/michelle.jpg') no-repeat top center scroll;
   background-color: @not-really-white;
-  background-size: cover;
+  /*.background-size(cover);*/
+  .background-size(100%);
 }
 
 
@@ -54,13 +57,21 @@ body {
 
 
 header#landing {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
+  .display(flex);
+  .justify-content(space-around);
+  .align-items(center);
+
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+
+  opacity: 0;
+
   height: 120px;
   width: 100%;
+
   padding: 10px;
-  background: @light-grey;
+
   -moz-box-shadow:    inset 0px 1px 3px 0px rgba(0,0,0,0.50);
   box-shadow:         inset 0px 1px 3px 0px rgba(0,0,0,0.50);
 
@@ -89,11 +100,13 @@ header#landing {
 
 }
 
+
 section#cta {
   .display(flex);
   .justify-content(center);
   .align-items(center);
-  height: 50rem;
+  height: 65rem;
+  opacity: 0;
 
   h2 {
 
@@ -114,4 +127,14 @@ section#cta {
     }
   }
 
+}
+
+#landing-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0);
+  cursor: hand;
+  cursor: pointer;
 }

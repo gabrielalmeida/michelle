@@ -37,6 +37,9 @@ livedata@1.0.11
 logging@1.0.5
 meteor-platform@1.2.0
 meteor@1.1.3
+michelle:jquery-waypoints@1.1.0
+michelle:onepage-scroll@1.3.1
+michelle:velocity@1.1.0
 minifiers@1.1.2
 minimongo@1.0.5
 mobile-status-bar@1.0.1
