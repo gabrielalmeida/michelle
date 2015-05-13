@@ -9,7 +9,7 @@ insecure
 less
 mquandalle:jade
 jquery
-michelle:jquery-waypoints
+bigu:waypoints
 michelle:velocity
-michelle:onepage-scroll
+#michelle:onepage-scroll
 iron:router
